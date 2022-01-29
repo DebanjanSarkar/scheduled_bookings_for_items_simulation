@@ -20,6 +20,8 @@ Features of this booking-simulation script:-
 6. The whole program runs as a menu driven program, where repeated operations can be performed till EXIT option is chosen, which is designed mainly
    to run in console. At each operation at every step, the user gets clear and lucid messages what he has to do to perform something, or what he has
    done. So it is made to be USER-FRIENDLY !
+7. At almost all steps the code is well-managed to handle exceptions, and user credibility and type is validated at each step. Thus, the program handle
+   almost all types of errors and exceptions!
 
 @author: Debanjan Sarkar
 """
@@ -177,7 +179,7 @@ k. Exit
 
 while(1):
     print("\nSelect the choice corresponding to the operation you want to perform:",options,"Enter your choice: ",sep='\n',end=' ')
-    choice = input("\n")[0].lower()
+    choice = input("")[0].lower()
 
     if(choice=='a'):
         print("\nUsers and their ids:-")
